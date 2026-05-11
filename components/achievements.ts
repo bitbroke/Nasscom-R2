@@ -31,7 +31,8 @@ export function useAchievements(): UseAchievements {
   const [earned, setEarned] = useState<Achievement[]>([]);
   const [latestToast, setLatestToast] = useState<Achievement | null>(null);
   const earnedIds = useRef<Set<string>>(new Set());
-  const toastTimer = useRef<ReturnType<typeof setTimeout>>();
+// Add 'undefined' or 'null' inside the parentheses
+const toastTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   const checkAchievement = useCallback((id: string) => {
     if (earnedIds.current.has(id)) return;
