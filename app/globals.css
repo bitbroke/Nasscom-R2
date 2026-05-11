@@ -10,6 +10,28 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
+
+  /* ── Soft Rainbow Palette ── */
+  --color-rainbow-cream: #fbf8cc;
+  --color-rainbow-peach: #fde4cf;
+  --color-rainbow-pink: #ffcfd2;
+  --color-rainbow-lavender: #f1c0e8;
+  --color-rainbow-lilac: #cfbaf0;
+  --color-rainbow-sky: #a3c4f3;
+  --color-rainbow-cyan: #90dbf4;
+  --color-rainbow-aqua: #8eecf5;
+  --color-rainbow-mint: #98f5e1;
+  --color-rainbow-green: #b9fbc0;
+
+  /* ── Legacy compatibility tokens ── */
+  --color-rose-primary: #d4638a;
+  --color-rose-dark: #b8507a;
+  --color-peach: #fde4cf;
+  --color-peach-light: #fbf8cc;
+  --color-peach-dark: #e8c49e;
+  --color-mint: #98f5e1;
+  --color-mint-dark: #6de0b5;
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,72 +71,73 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: #fbf8cc;
+  --foreground: #3a2d4f;
+  --card: rgba(255, 255, 255, 0.55);
+  --card-foreground: #3a2d4f;
+  --popover: #fff;
+  --popover-foreground: #3a2d4f;
+  --primary: #cfbaf0;
+  --primary-foreground: #3a2d4f;
+  --secondary: #fde4cf;
+  --secondary-foreground: #5a3e6a;
+  --muted: #f1c0e866;
+  --muted-foreground: #7a6090;
+  --accent: #a3c4f3;
+  --accent-foreground: #2d3f5f;
+  --destructive: #ff6b6b;
+  --border: #cfbaf040;
+  --input: #cfbaf035;
+  --ring: #cfbaf060;
+  --chart-1: #f1c0e8;
+  --chart-2: #98f5e1;
+  --chart-3: #a3c4f3;
+  --chart-4: #ffcfd2;
+  --chart-5: #b9fbc0;
+  --radius: 0.75rem;
+  --sidebar: #fbf8cc;
+  --sidebar-foreground: #3a2d4f;
+  --sidebar-primary: #cfbaf0;
+  --sidebar-primary-foreground: #3a2d4f;
+  --sidebar-accent: #fde4cf;
+  --sidebar-accent-foreground: #5a3e6a;
+  --sidebar-border: #cfbaf030;
+  --sidebar-ring: #cfbaf060;
 }
 
+/* ── Gothic Dark Mode — #f7374f, #88304e, #522546, #2c2c2c ── */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #2c2c2c;
+  --foreground: #f0e6ee;
+  --card: rgba(82, 37, 70, 0.45);
+  --card-foreground: #f0e6ee;
+  --popover: #3a2035;
+  --popover-foreground: #f0e6ee;
+  --primary: #f7374f;
+  --primary-foreground: #fff;
+  --secondary: #522546;
+  --secondary-foreground: #f0e6ee;
+  --muted: #52254666;
+  --muted-foreground: #c9a0b8;
+  --accent: #88304e;
+  --accent-foreground: #f0e6ee;
+  --destructive: #f7374f;
+  --border: #f7374f18;
+  --input: #ffffff12;
+  --ring: #f7374f40;
+  --chart-1: #f7374f;
+  --chart-2: #88304e;
+  --chart-3: #a3c4f3;
+  --chart-4: #ffcfd2;
+  --chart-5: #522546;
+  --sidebar: #2c2c2c;
+  --sidebar-foreground: #f0e6ee;
+  --sidebar-primary: #f7374f;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #522546;
+  --sidebar-accent-foreground: #f0e6ee;
+  --sidebar-border: #f7374f12;
+  --sidebar-ring: #f7374f40;
 }
 
 @layer base {
@@ -127,4 +150,398 @@
   html {
     @apply font-sans;
   }
+}
+
+/* ══════════════════════════════════════════════
+   FLOATING KAOMOJI BACKGROUND
+   ══════════════════════════════════════════════ */
+.kaomoji-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.kaomoji {
+  position: absolute;
+  font-size: 1.4rem;
+  opacity: 0.12;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  user-select: none;
+}
+
+.dark .kaomoji {
+  opacity: 0.08;
+}
+
+@keyframes kaomoji-drift-1 {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(60px, -120px) rotate(8deg); }
+  50% { transform: translate(-30px, -240px) rotate(-5deg); }
+  75% { transform: translate(80px, -360px) rotate(12deg); }
+  100% { transform: translate(0, -500px) rotate(0deg); opacity: 0; }
+}
+
+@keyframes kaomoji-drift-2 {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(-70px, -100px) rotate(-10deg); }
+  50% { transform: translate(40px, -220px) rotate(6deg); }
+  75% { transform: translate(-50px, -340px) rotate(-8deg); }
+  100% { transform: translate(0, -480px) rotate(0deg); opacity: 0; }
+}
+
+@keyframes kaomoji-drift-3 {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  33% { transform: translate(50px, -150px) rotate(15deg) scale(1.05); }
+  66% { transform: translate(-60px, -300px) rotate(-10deg) scale(0.95); }
+  100% { transform: translate(20px, -460px) rotate(5deg) scale(1); opacity: 0; }
+}
+
+@keyframes kaomoji-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+/* ── Custom Styled Scrollbar ── */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #cfbaf040;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #cfbaf070;
+}
+.dark .custom-scroll::-webkit-scrollbar-thumb {
+  background: #cfbaf030;
+}
+.dark .custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #cfbaf060;
+}
+
+/* ══════════════════════════════════════════════
+   GLASSMORPHISM CARD — Frosted Glass
+   ══════════════════════════════════════════════ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 3rem;
+  box-shadow:
+    0 8px 32px rgba(207, 186, 240, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.glass-card:hover {
+  box-shadow:
+    0 12px 40px rgba(207, 186, 240, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+.dark .glass-card {
+  background: rgba(40, 30, 55, 0.55);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.dark .glass-card:hover {
+  box-shadow:
+    0 12px 40px rgba(207, 186, 240, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* ── Glass Peach variant ── */
+.glass-peach {
+  background: rgba(253, 228, 207, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(253, 228, 207, 0.4);
+  border-radius: 1.5rem;
+}
+.dark .glass-peach {
+  background: rgba(61, 46, 80, 0.35);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* ══════════════════════════════════════════════
+   SUGOI MOOD — ENRAGED STATE
+   ══════════════════════════════════════════════ */
+.enraged-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 100, 100, 0.12);
+  pointer-events: none;
+  z-index: 50;
+  animation: enraged-pulse 0.5s ease-in-out infinite alternate;
+}
+.dark .enraged-overlay {
+  background: rgba(255, 60, 60, 0.15);
+}
+
+@keyframes enraged-pulse {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes sugoi-shake {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  10% { transform: translateX(-4px) rotate(-2deg); }
+  20% { transform: translateX(4px) rotate(2deg); }
+  30% { transform: translateX(-3px) rotate(-1deg); }
+  40% { transform: translateX(3px) rotate(1deg); }
+  50% { transform: translateX(-2px) rotate(-1deg); }
+  60% { transform: translateX(2px) rotate(1deg); }
+  70% { transform: translateX(-1px) rotate(0deg); }
+  80% { transform: translateX(1px) rotate(0deg); }
+  90% { transform: translateX(0) rotate(0deg); }
+}
+
+.sugoi-shake {
+  animation: sugoi-shake 0.4s ease-in-out infinite;
+}
+
+/* ── Sugoi avatar glow states ── */
+.sugoi-glow-happy {
+  filter: drop-shadow(0 0 12px rgba(152, 245, 225, 0.5));
+}
+.sugoi-glow-annoyed {
+  filter: drop-shadow(0 0 12px rgba(255, 207, 210, 0.6));
+}
+.sugoi-glow-enraged {
+  filter: drop-shadow(0 0 20px rgba(255, 60, 60, 0.7));
+}
+
+/* ── Button disabled during enraged ── */
+.buttons-disabled button:not(.sugoi-avatar-btn),
+.buttons-disabled [role="button"]:not(.sugoi-avatar-btn) {
+  pointer-events: none !important;
+  opacity: 0.4 !important;
+  filter: grayscale(0.5);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+/* ── Rainbow gradient text ── */
+.rainbow-text {
+  background: linear-gradient(
+    135deg,
+    #f1c0e8,
+    #cfbaf0,
+    #a3c4f3,
+    #90dbf4,
+    #98f5e1,
+    #b9fbc0
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-shift 4s ease infinite;
+}
+.dark .rainbow-text {
+  background: linear-gradient(
+    135deg,
+    #f1c0e8,
+    #cfbaf0,
+    #a3c4f3,
+    #90dbf4,
+    #98f5e1,
+    #b9fbc0
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-shift 4s ease infinite;
+}
+
+@keyframes rainbow-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ── Column titles ── */
+.column-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 1.1rem;
+}
+
+/* ── Cute input focus ring ── */
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 3px rgba(207, 186, 240, 0.3);
+}
+
+/* ── Greeting text style ── */
+.greeting-text {
+  font-size: 0.82rem;
+  font-style: italic;
+  opacity: 0.85;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+/* ══════════════════════════════════════════════
+   RPG HEALTH BAR
+   ══════════════════════════════════════════════ */
+.hp-bar-track {
+  height: 18px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+.dark .hp-bar-track {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #f7374f40;
+}
+.hp-bar-fill {
+  height: 100%;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #ef4444, #f59e0b);
+  transition: width 0.6s ease-out;
+  position: relative;
+}
+.hp-bar-fill::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  right: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ══════════════════════════════════════════════
+   ACHIEVEMENT TOAST
+   ══════════════════════════════════════════════ */
+@keyframes toast-in {
+  0% { transform: translateX(120%); opacity: 0; }
+  15% { transform: translateX(0); opacity: 1; }
+  85% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(120%); opacity: 0; }
+}
+
+.achievement-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  padding: 12px 20px;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 3px solid rgba(207, 186, 240, 0.6);
+  box-shadow: 0 8px 32px rgba(207, 186, 240, 0.3);
+  animation: toast-in 4s ease forwards;
+  max-width: 320px;
+}
+.dark .achievement-toast {
+  background: rgba(82, 37, 70, 0.9);
+  border-color: #f7374f60;
+  box-shadow: 0 8px 32px rgba(247, 55, 79, 0.3);
+}
+
+/* ══════════════════════════════════════════════
+   TYPEWRITER EFFECT
+   ══════════════════════════════════════════════ */
+@keyframes typewriter-cursor {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: currentColor; }
+}
+.typewriter-line {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typewriter-cursor 0.8s step-end infinite;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* ══════════════════════════════════════════════
+   VISION TAB TOGGLE
+   ══════════════════════════════════════════════ */
+.vision-tab {
+  display: inline-flex;
+  border-radius: 3rem;
+  overflow: hidden;
+  border: 2px solid rgba(207, 186, 240, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+}
+.dark .vision-tab {
+  border-color: #f7374f30;
+  background: rgba(82, 37, 70, 0.3);
+}
+.vision-tab button {
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.vision-tab button.active {
+  background: rgba(207, 186, 240, 0.5);
+  color: var(--foreground);
+}
+.dark .vision-tab button.active {
+  background: #f7374f60;
+}
+
+/* ══════════════════════════════════════════════
+   GOTHIC DARK MODE — GLASS OVERRIDES
+   ══════════════════════════════════════════════ */
+.dark .glass-card {
+  background: rgba(82, 37, 70, 0.35);
+  border-color: rgba(247, 55, 79, 0.15);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.dark .glass-card:hover {
+  box-shadow:
+    0 12px 40px rgba(247, 55, 79, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  border-color: rgba(247, 55, 79, 0.25);
+}
+.dark .glass-peach {
+  background: rgba(82, 37, 70, 0.3);
+  border-color: rgba(247, 55, 79, 0.1);
+}
+
+/* ── Gothic rainbow text override ── */
+.dark .rainbow-text {
+  background: linear-gradient(135deg, #f7374f, #ff6b8a, #f7374f, #88304e);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-shift 4s ease infinite;
+}
+
+/* ── Battle text glow ── */
+.battle-text {
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+  animation: battle-flash 0.6s ease;
+}
+@keyframes battle-flash {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
 }
